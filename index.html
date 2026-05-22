@@ -120,7 +120,7 @@
                 </h3>
                 <div class="text-sm space-y-2">
                     <p class="font-semibold text-slate-800">Hotel Stay Yeoyu (往十里站 / 왕십리역)</p>
-                    <p class="text-xs text-slate-500">📍 16 Wangsimni-ro 22-gil, Seongdong-gu, Seoul (성동구 王십리로22길 16)</p>
+                    <p class="text-xs text-slate-500">📍 16 Wangsimni-ro 22-gil, Seongdong-gu, Seoul (성동구 왕십리로22길 16)</p>
                     <p class="text-xs bg-slate-100 p-2 rounded text-slate-600 font-medium">🚇 交通：往十里站 (Wangsimni / 왕십리역) 2、3 號出口步行約 5~8 分鐘。此站為 2號線/5號線/京義中央線/水仁·盆堂線核心大樞紐！</p>
                 </div>
             </div>
@@ -337,7 +337,7 @@
                             <span>🗣️</span> 韓文語音翻譯機 (附語音發音)
                         </h4>
                         <div class="space-y-3">
-                            <input type="text" id="transInput" placeholder="輸入中文或英文..." value="請帶裝我到奧林匹克大廳" class="w-full px-3 py-2 text-sm border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                            <input type="text" id="transInput" placeholder="輸入中文或英文..." value="請帶我到奧林匹克大廳" class="w-full px-3 py-2 text-sm border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
                             <div class="flex gap-2">
                                 <button onclick="triggerTranslation()" class="flex-grow bg-indigo-600 text-white text-xs font-bold py-2 rounded-lg hover:bg-indigo-700 transition">翻譯為韓文</button>
                                 <button onclick="playTTS(document.getElementById('transOutput').value)" class="bg-pink-500 text-white px-3 py-2 rounded-lg hover:bg-pink-600 transition flex items-center gap-1">
@@ -497,11 +497,29 @@
         function playTTS(text) {
             if (!text) return;
             const synth = window.speechSynthesis;
-            if (synth.speaking) {
-                synth.cancel();
-            }
+            if (!synth) return;
+
+            synth.cancel();
+
             const utterance = new SpeechSynthesisUtterance(text);
             utterance.lang = 'ko-KR';
+            utterance.rate = 0.70;
+            utterance.pitch = 1.0;
+
+            const voices = synth.getVoices();
+            const koVoice = voices.find(v => v.lang.startsWith('ko'));
+            if (koVoice) {
+                utterance.voice = koVoice;
+            } else if (voices.length === 0) {
+                synth.onvoiceschanged = () => {
+                    const updatedVoices = synth.getVoices();
+                    const fallbackKoVoice = updatedVoices.find(v => v.lang.startsWith('ko'));
+                    if (fallbackKoVoice) {
+                        utterance.voice = fallbackKoVoice;
+                    }
+                };
+            }
+
             synth.speak(utterance);
         }
 
