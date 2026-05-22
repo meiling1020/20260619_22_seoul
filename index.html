@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首爾 4天3夜 追星 ✕ 寶可夢 終極行程表</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght=300;400;500;700;900&display=swap');
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+            background-color: #f1f5f9;
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f5f9;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+        @media print {
+            .no-print {
+                display: none !important;
+            }
+            body {
+                background: white;
+                color: black;
+            }
+            .print-card {
+                box-shadow: none !important;
+                border: 1px solid #e2e8f0 !important;
+                page-break-inside: avoid;
+            }
+            .tab-content {
+                display: block !important;
+                opacity: 1 !important;
+                page-break-after: always;
+            }
+        }
+    </style>
+</head>
+<body class="min-h-screen text-slate-800 antialiased flex flex-col">
+
+    <div class="h-2 w-full bg-gradient-to-r from-pink-500 via-indigo-500 to-emerald-400"></div>
+
+    <header class="bg-slate-900 text-white shadow-xl relative overflow-hidden py-8 px-4 sm:px-6 lg:px-8">
+        <div class="absolute inset-0 bg-cover bg-center opacity-10" style="background-image: url('https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?q=80&w=1200');"></div>
+        <div class="max-w-7xl mx-auto relative z-10 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div>
+                <div class="flex items-center gap-2 mb-2">
+                    <span class="bg-pink-500 text-white text-xs font-bold px-2.5 py-1 rounded-full uppercase tracking-widest">Concert & Pop-Up</span>
+                    <span class="bg-indigo-500 text-white text-xs font-bold px-2.5 py-1 rounded-full uppercase tracking-widest">June 2026</span>
+                </div>
+                <h1 class="text-3xl sm:text-4xl font-extrabold tracking-tight">首爾 4天3夜 追星 ✕ 寶可夢狂熱之旅</h1>
+                <p class="text-slate-400 mt-1 text-sm sm:text-base">MAMAMOO [4WARD] in SEOUL  &nbsp;✦&nbsp;  聖水洞寶可夢大滿貫攻略</p>
+            </div>
+            <div class="bg-white/10 backdrop-blur-md rounded-2xl p-4 border border-white/20 text-center w-full md:w-auto min-w-[280px]">
+                <p class="text-xs uppercase tracking-wider text-pink-400 font-bold mb-1">距离首爾登陸倒數</p>
+                <div class="grid grid-cols-4 gap-2 text-white">
+                    <div class="bg-slate-950/40 rounded px-2 py-1"><span id="days" class="text-lg sm:text-xl font-black">00</span><p class="text-[9px] text-slate-400">DAYS</p></div>
+                    <div class="bg-slate-950/40 rounded px-2 py-1"><span id="hours" class="text-lg sm:text-xl font-black">00</span><p class="text-[9px] text-slate-400">HRS</p></div>
+                    <div class="bg-slate-950/40 rounded px-2 py-1"><span id="mins" class="text-lg sm:text-xl font-black">00</span><p class="text-[9px] text-slate-400">MINS</p></div>
+                    <div class="bg-slate-950/40 rounded px-2 py-1"><span id="secs" class="text-lg sm:text-xl font-black">00</span><p class="text-[9px] text-slate-400">SECS</p></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow max-w-7xl mx-auto w-full p-4 sm:p-6 lg:p-8 grid grid-cols-1 lg:grid-cols-12 gap-8">
+        
+        <section class="lg:col-span-4 space-y-6 no-print">
+            
+            <div class="bg-white rounded-2xl shadow-md p-5 border border-slate-200/80 hover:shadow-lg transition">
+                <h3 class="text-lg font-bold text-slate-900 border-b pb-2 mb-3 flex items-center gap-2">
+                    <span>✈️</span> 雙向航班與分流會合
+                </h3>
+                <div class="space-y-4">
+                    <div class="p-3 bg-indigo-50 rounded-xl border border-indigo-100">
+                        <p class="text-xs font-bold text-indigo-600 mb-1">去程：6/19 (五) - 航廈不同分流會合</p>
+                        <div class="space-y-2 text-xs">
+                            <div class="border-b pb-2">
+                                <span class="font-bold">香港組：國泰 CX410 (第一航廈 T1)</span>
+                                <p class="text-slate-500">HKG 09:25 ➔ 14:05 ICN T1</p>
+                                <p class="text-[10px] text-indigo-700 font-medium mt-1">🚌 乘車：搭機場巴士 <strong class="bg-indigo-100 px-1 rounded">6006 號</strong> 直達會場</p>
+                            </div>
+                            <div>
+                                <span class="font-bold">東京組：首爾航空 RS706 (第二航廈 T2)</span>
+                                <p class="text-slate-500">NRT 11:40 ➔ 14:20 ICN T2</p>
+                                <p class="text-[10px] text-indigo-700 font-medium mt-1">🚌 乘車：搭機場巴士 <strong class="bg-indigo-100 px-1 rounded">6300 號</strong> 直達會場</p>
+                            </div>
+                        </div>
+                        <p class="mt-2 text-[11px] text-pink-700 bg-pink-50 p-2 rounded inline-block font-bold">🎯 最終集結：奧林匹克大廳付費寄存處</p>
+                    </div>
+                    <div class="p-3 bg-pink-50 rounded-xl border border-pink-100">
+                        <p class="text-xs font-bold text-pink-600 mb-1">回程：6/22 (一) - 機場各自離境</p>
+                        <div class="grid grid-cols-2 gap-2 text-xs">
+                            <div>
+                                <span class="font-bold">國泰 CX439</span>
+                                <p class="text-slate-500">ICN T1 13:40 ➔ 16:30 HKG</p>
+                            </div>
+                            <div>
+                                <span class="font-bold">首爾航空 RS703</span>
+                                <p class="text-slate-500">ICN T2 16:45 ➔ 19:10 NRT</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-md p-5 border border-slate-200/80 hover:shadow-lg transition">
+                <h3 class="text-lg font-bold text-slate-900 border-b pb-2 mb-3 flex items-center gap-2">
+                    <span>🏨</span> 住宿位置 (Hotel Stay Yeoyu / 머무름여유)
+                </h3>
+                <div class="text-sm space-y-2">
+                    <p class="font-semibold text-slate-800">Hotel Stay Yeoyu (往十里站 / 왕십리역)</p>
+                    <p class="text-xs text-slate-500">📍 16 Wangsimni-ro 22-gil, Seongdong-gu, Seoul (성동구 王십리로22길 16)</p>
+                    <p class="text-xs bg-slate-100 p-2 rounded text-slate-600 font-medium">🚇 交通：往十里站 (Wangsimni / 왕십리역) 2、3 號出口步行約 5~8 分鐘。此站為 2號線/5號線/京義中央線/水仁·盆堂線核心大樞紐！</p>
+                </div>
+            </div>
+
+            <div class="bg-gradient-to-br from-indigo-900 to-slate-900 text-white rounded-2xl shadow-xl p-5 border border-indigo-700/30">
+                <h3 class="text-lg font-bold border-b border-indigo-800 pb-2 mb-3 flex items-center gap-2 text-emerald-400">
+                    <span>⚡</span> 戰術求生錦囊
+                </h3>
+                <ul class="text-xs space-y-3">
+                    <li class="flex items-start gap-2">
+                        <span class="text-base">🎒</span>
+                        <div>
+                            <span class="font-bold text-slate-100">首日直奔置物：</span>
+                            <p class="text-slate-300">奧林匹克大廳付費寄物處（Cloakroom / 물품보관소）開演前 3 小時至開演後 1 小時開放。寄放完大型行李後直接在會場會合入場！</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <span class="text-base">🎫</span>
+                        <div>
+                            <span class="font-bold text-slate-100">無韓國門號 Email 搶票：</span>
+                            <p class="text-slate-300">首爾林、百變怪外國遊客皆可用 Email 登記，現場平板登記，收到確認信再行離開，系統支持過號入場！</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <span class="text-base">💳</span>
+                        <div>
+                            <span class="font-bold text-slate-100">刷卡限制提醒：</span>
+                            <p class="text-slate-300">百變怪扭蛋機強烈建議使用 <span class="text-amber-400 font-bold">實體 Mastercard</span> 刷卡。Apple Pay 與 Visa/JCB 結帳易發生拒刷或 Error。</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <span class="text-base">🌡️</span>
+                        <div>
+                            <span class="font-bold text-slate-100">避暑與防中暑：</span>
+                            <p class="text-slate-300">6 月首爾氣溫高達 31°C。首爾林禁止攜帶瓶裝飲料入場，入內前記得喝完。聖水洞各快閃店間移動推薦直接搭計程車。</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-md p-5 border border-slate-200/80">
+                <h3 class="text-lg font-bold text-slate-900 border-b pb-2 mb-3 flex items-center gap-2">
+                    <span>🎒</span> 追星打包點檢表
+                </h3>
+                <div class="space-y-2 text-sm">
+                    <label class="flex items-center gap-2.5 cursor-pointer p-1 rounded hover:bg-slate-50">
+                        <input type="checkbox" class="w-4 h-4 text-pink-500 rounded border-slate-300 focus:ring-pink-400">
+                        <span>護照及機票 (必帶)</span>
+                    </label>
+                    <label class="flex items-center gap-2.5 cursor-pointer p-1 rounded hover:bg-slate-50">
+                        <input type="checkbox" class="w-4 h-4 text-pink-500 rounded border-slate-300 focus:ring-pink-400">
+                        <span>MAMAMOO 演唱會門票 / 憑證</span>
+                    </label>
+                    <label class="flex items-center gap-2.5 cursor-pointer p-1 rounded hover:bg-slate-50">
+                        <input type="checkbox" class="w-4 h-4 text-pink-500 rounded border-slate-300 focus:ring-pink-400">
+                        <span>官方蘿蔔棒 (木木棒 / 무봉) & 備用電池</span>
+                    </label>
+                    <label class="flex items-center gap-2.5 cursor-pointer p-1 rounded hover:bg-slate-50">
+                        <input type="checkbox" class="w-4 h-4 text-pink-500 rounded border-slate-300 focus:ring-pink-400">
+                        <span>實體信用卡 (實測 Mastercard 暢行無阻)</span>
+                    </label>
+                    <label class="flex items-center gap-2.5 cursor-pointer p-1 rounded hover:bg-slate-50">
+                        <input type="checkbox" class="w-4 h-4 text-pink-500 rounded border-slate-300 focus:ring-pink-400">
+                        <span>大容量行動電源 & 充電線</span>
+                    </label>
+                    <label class="flex items-center gap-2.5 cursor-pointer p-1 rounded hover:bg-slate-50">
+                        <input type="checkbox" class="w-4 h-4 text-pink-500 rounded border-slate-300 focus:ring-pink-400">
+                        <span>T-Money 交通卡 & 少量韓元現金</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-md p-5 border border-slate-200/80">
+                <h3 class="text-lg font-bold text-slate-900 border-b pb-2 mb-3 flex items-center gap-2">
+                    <span>🪙</span> 匯率快速估計
+                </h3>
+                <div class="space-y-4">
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-500 mb-1">輸入首爾售價：韓元 (KRW)</label>
+                        <input type="number" id="krwInput" placeholder="KRW" value="10000" class="w-full px-3 py-2 text-sm border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                    </div>
+                    <div class="grid grid-cols-2 gap-3 text-xs bg-slate-50 p-3 rounded-xl border border-slate-100">
+                        <div>
+                            <span class="text-slate-500 font-semibold">香港組 (HKD)</span>
+                            <p class="mt-1 text-slate-900"><strong id="hkdOutput" class="text-pink-600 text-sm font-bold">57.1</strong> HKD</p>
+                        </div>
+                        <div>
+                            <span class="text-slate-500 font-semibold">東京組 (JPY)</span>
+                            <p class="mt-1 text-slate-900"><strong id="jpyOutput" class="text-indigo-600 text-sm font-bold">1,111</strong> JPY</p>
+                        </div>
+                    </div>
+                    <p class="text-[10px] text-slate-400 italic leading-snug">備註：匯率僅供概算參考 (基準：1 HKD ≈ 175 KRW / 1 JPY ≈ 9 KRW)</p>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="lg:col-span-8 space-y-6">
+            
+            <div class="bg-white rounded-2xl shadow-md p-4 sm:p-5 border border-slate-200/80 flex flex-col sm:flex-row justify-between items-center gap-4 no-print">
+                <div class="flex flex-wrap gap-2 w-full sm:w-auto" id="tabButtons">
+                    <button onclick="switchDay(1)" id="btn-day1" class="tab-btn px-4 py-2 text-sm font-bold rounded-xl transition duration-200 bg-pink-500 text-white shadow-md">
+                        6/19 (五) Day 1
+                    </button>
+                    <button onclick="switchDay(2)" id="btn-day2" class="tab-btn px-4 py-2 text-sm font-bold rounded-xl transition duration-200 bg-slate-100 text-slate-600 hover:bg-slate-200">
+                        6/20 (六) Day 2
+                    </button>
+                    <button onclick="switchDay(3)" id="btn-day3" class="tab-btn px-4 py-2 text-sm font-bold rounded-xl transition duration-200 bg-slate-100 text-slate-600 hover:bg-slate-200">
+                        6/21 (日) Day 3
+                    </button>
+                    <button onclick="switchDay(4)" id="btn-day4" class="tab-btn px-4 py-2 text-sm font-bold rounded-xl transition duration-200 bg-slate-100 text-slate-600 hover:bg-slate-200">
+                        6/22 (一) Day 4
+                    </button>
+                </div>
+                <button onclick="openModal()" class="bg-gradient-to-r from-emerald-500 to-teal-500 text-white text-sm font-bold px-4 py-2.5 rounded-xl shadow-md hover:opacity-90 transition flex items-center gap-2">
+                    <span>🇰🇷</span> 首爾隨身小工具 (翻譯與交通)
+                </button>
+            </div>
+
+            <div id="day1" class="tab-content block space-y-4">
+                <div class="bg-indigo-600 text-white p-5 rounded-2xl shadow-md flex justify-between items-center">
+                    <div>
+                        <span class="text-xs bg-white/20 px-2.5 py-1 rounded-full font-bold uppercase tracking-wider">Day 1 Focus</span>
+                        <h2 class="text-xl sm:text-2xl font-black mt-1">首爾登陸 ✕ 演唱會首發應援 🎤</h2>
+                    </div>
+                    <span class="text-4xl hidden sm:inline">🎵</span>
+                </div>
+                <div class="space-y-3" id="timeline-day1"></div>
+            </div>
+
+            <div id="day2" class="tab-content hidden space-y-4">
+                <div class="bg-pink-500 text-white p-5 rounded-2xl shadow-md flex justify-between items-center">
+                    <div>
+                        <span class="text-xs bg-white/20 px-2.5 py-1 rounded-full font-bold uppercase tracking-wider">Day 2 Focus</span>
+                        <h2 class="text-xl sm:text-2xl font-black mt-1">明洞潮流購物 ✕ 演唱會雙倍感動 💜</h2>
+                    </div>
+                    <span class="text-4xl hidden sm:inline">🛍️</span>
+                </div>
+                <div class="space-y-3" id="timeline-day2"></div>
+            </div>
+
+            <div id="day3" class="tab-content hidden space-y-4">
+                <div class="bg-gradient-to-r from-emerald-500 to-teal-600 text-white p-5 rounded-2xl shadow-md">
+                    <span class="text-xs bg-white/20 px-2.5 py-1 rounded-full font-bold uppercase tracking-wider">Day 3 Focus</span>
+                    <h2 class="text-xl sm:text-2xl font-black mt-1">寶可夢狂熱最後日 ✕ 聖水洞極限突擊 🦖</h2>
+                    <p class="text-xs text-emerald-100 mt-2">※ 6/21 為全活動終日，必須嚴格執行時間策略！外國人可用 Email 登記過號進入。</p>
+                </div>
+                
+                <div class="bg-white p-5 rounded-2xl shadow-md border border-slate-200/80 space-y-4">
+                    <h4 class="font-extrabold text-slate-800 text-base flex items-center gap-2">
+                        <span class="text-emerald-500">📍</span> 09:00 - 17:00 寶可夢無傷突擊動線
+                    </h4>
+                    <div class="grid grid-cols-1 sm:grid-cols-4 gap-4 text-center text-xs">
+                        <div class="p-3 bg-emerald-50 border border-emerald-200 rounded-xl">
+                            <span class="text-xl">🌳</span>
+                            <p class="font-bold text-emerald-800 mt-1">① 09:00 首爾林 (서울숲)</p>
+                            <p class="text-[10px] text-slate-500 mt-0.5">抽取秘密森林整理券，可由一人代表登記多人</p>
+                        </div>
+                        <div class="p-3 bg-slate-50 border border-slate-200 rounded-xl relative">
+                            <span class="text-xl">🚕</span>
+                            <p class="font-bold text-slate-700 mt-1">② 09:30 的士轉移</p>
+                            <p class="text-[10px] text-slate-500 mt-0.5">避免公車擁擠及高溫，直奔聖水洞 (성수동) 核心區</p>
+                        </div>
+                        <div class="p-3 bg-purple-50 border border-purple-200 rounded-xl">
+                            <span class="text-xl">👾</span>
+                            <p class="font-bold text-purple-800 mt-1">③ 10:00 登記百變怪</p>
+                            <p class="text-[10px] text-slate-500 mt-0.5">百變怪遊樂場分開登記，再排 nagano 聖水店</p>
+                        </div>
+                        <div class="p-3 bg-pink-50 border border-pink-200 rounded-xl">
+                            <span class="text-xl">🛍️</span>
+                            <p class="font-bold text-pink-800 mt-1">④ 12:30+ 輕鬆進場</p>
+                            <p class="text-[10px] text-slate-500 mt-0.5">利用過號可進機制，逛 Olive Young、拍照採購</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-3" id="timeline-day3"></div>
+            </div>
+
+            <div id="day4" class="tab-content hidden space-y-4">
+                <div class="bg-slate-700 text-white p-5 rounded-2xl shadow-md flex justify-between items-center">
+                    <div>
+                        <span class="text-xs bg-white/20 px-2.5 py-1 rounded-full font-bold uppercase tracking-wider">Day 4 Focus</span>
+                        <h2 class="text-xl sm:text-2xl font-black mt-1">行李打包歸航 ➔ 回溫馨的家 ✈️</h2>
+                    </div>
+                    <span class="text-4xl hidden sm:inline">🏡</span>
+                </div>
+                <div class="space-y-3" id="timeline-day4"></div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <div id="toolkitModal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/60 backdrop-blur-sm hidden">
+        <div class="bg-white rounded-3xl shadow-2xl w-full max-w-4xl max-h-[90vh] overflow-y-auto flex flex-col">
+            
+            <div class="p-6 bg-slate-900 text-white flex justify-between items-center sticky top-0 z-10 border-b border-slate-800">
+                <div>
+                    <h3 class="text-xl font-black tracking-tight flex items-center gap-2">
+                        <span>🇰🇷</span> 首爾隨身行囊小工具 (Travel Toolkit)
+                    </h3>
+                    <p class="text-xs text-slate-400 mt-0.5">即時韓語對話發音 ✕ 首爾核心線路捷徑指南</p>
+                </div>
+                <button onclick="closeModal()" class="text-slate-400 hover:text-white text-2xl font-bold px-3 py-1 bg-slate-800 rounded-xl">&times;</button>
+            </div>
+
+            <div class="p-6 space-y-8 flex-grow">
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    
+                    <div class="bg-slate-50 p-5 rounded-2xl border border-slate-200">
+                        <h4 class="font-extrabold text-slate-900 mb-3 flex items-center gap-1.5 text-sm uppercase">
+                            <span>🗣️</span> 韓文語音翻譯機 (附語音發音)
+                        </h4>
+                        <div class="space-y-3">
+                            <input type="text" id="transInput" placeholder="輸入中文或英文..." value="請帶裝我到奧林匹克大廳" class="w-full px-3 py-2 text-sm border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                            <div class="flex gap-2">
+                                <button onclick="triggerTranslation()" class="flex-grow bg-indigo-600 text-white text-xs font-bold py-2 rounded-lg hover:bg-indigo-700 transition">翻譯為韓文</button>
+                                <button onclick="playTTS(document.getElementById('transOutput').value)" class="bg-pink-500 text-white px-3 py-2 rounded-lg hover:bg-pink-600 transition flex items-center gap-1">
+                                    <span>🔊</span> 播放語音
+                                </button>
+                            </div>
+                            <textarea id="transOutput" readonly class="w-full p-3 text-sm bg-white border rounded-lg h-24 text-indigo-900 font-semibold" placeholder="韓文翻譯結果將顯示在此..."></textarea>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-50 p-5 rounded-2xl border border-slate-200 flex flex-col">
+                        <h4 class="font-extrabold text-slate-900 mb-3 flex items-center gap-1.5 text-sm uppercase">
+                            <span>💬</span> 常用求生對話與高頻句庫 (點擊即發音)
+                        </h4>
+                        <div class="space-y-2 overflow-y-auto max-h-[220px] pr-1 flex-grow text-xs">
+                            <div onclick="speakPhrase('올림픽홀로 가주세요')" class="p-2.5 bg-white rounded-lg border border-slate-200 shadow-sm hover:border-pink-400 cursor-pointer transition flex justify-between items-center">
+                                <div>
+                                    <span class="font-bold text-slate-700">🚕 的士：請帶我去奧林匹克大廳</span>
+                                    <p class="text-indigo-600 font-semibold mt-0.5">올림픽홀로 가주세요</p>
+                                </div>
+                                <span class="text-base">🔊</span>
+                            </div>
+                            <div onclick="speakPhrase('왕십리역 머무름여유 호텔로 가주세요')" class="p-2.5 bg-white rounded-lg border border-slate-200 shadow-sm hover:border-pink-400 cursor-pointer transition flex justify-between items-center">
+                                <div>
+                                    <span class="font-bold text-slate-700">🚕 的士：請帶我去往十里站머무름여유飯店</span>
+                                    <p class="text-indigo-600 font-semibold mt-0.5">왕십리역 머무름여유 호텔로 가주세요</p>
+                                </div>
+                                <span class="text-base">🔊</span>
+                            </div>
+                            <div onclick="speakPhrase('이것 마스터카드로 결제 가능한가요?')" class="p-2.5 bg-white rounded-lg border border-slate-200 shadow-sm hover:border-pink-400 cursor-pointer transition flex justify-between items-center">
+                                <div>
+                                    <span class="font-bold text-slate-700">💳 結帳：這個可以用 Mastercard 刷卡嗎？</span>
+                                    <p class="text-indigo-600 font-semibold mt-0.5">이것 마스터카드로 결제 가능한가요?</p>
+                                </div>
+                                <span class="text-base">🔊</span>
+                            </div>
+                            <div onclick="speakPhrase('포켓몬 비밀의 숲이 어디에 있나요?')" class="p-2.5 bg-white rounded-lg border border-slate-200 shadow-sm hover:border-pink-400 cursor-pointer transition flex justify-between items-center">
+                                <div>
+                                    <span class="font-bold text-slate-700">🗺️ 問路：請問寶可夢秘密森林在哪裡？</span>
+                                    <p class="text-indigo-600 font-semibold mt-0.5">포켓몬 비밀의 숲이 어디에 있나요?</p>
+                                </div>
+                                <span class="text-base">🔊</span>
+                            </div>
+                            <div onclick="speakPhrase('메타몽 아이스크림 하나 주세요')" class="p-2.5 bg-white rounded-lg border border-slate-200 shadow-sm hover:border-pink-400 cursor-pointer transition flex justify-between items-center">
+                                <div>
+                                    <span class="font-bold text-slate-700">🍦 點餐：請給我一份百變怪雪糕</span>
+                                    <p class="text-indigo-600 font-semibold mt-0.5">메타몽 아이스크림 하나 주세요</p>
+                                </div>
+                                <span class="text-base">🔊</span>
+                            </div>
+                            <div onclick="speakPhrase('택스 리펀드 가능한가요?')" class="p-2.5 bg-white rounded-lg border border-slate-200 shadow-sm hover:border-pink-400 cursor-pointer transition flex justify-between items-center">
+                                <div>
+                                    <span class="font-bold text-slate-700">🛍️ 購物：請問可以退稅嗎？</span>
+                                    <p class="text-indigo-600 font-semibold mt-0.5">택스 리펀드 가능한가요?</p>
+                                </div>
+                                <span class="text-base">🔊</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="bg-indigo-50/50 p-5 rounded-2xl border border-indigo-100">
+                    <h4 class="font-extrabold text-indigo-950 mb-3 flex items-center gap-1.5 text-sm uppercase">
+                        <span>🚇</span> 首爾地鐵與大巴快捷線路檢索
+                    </h4>
+                    <p class="text-xs text-slate-500 mb-4">選擇您要往返的起點與終點，系統將立即為您精確計算本行程專屬的高效交通與轉乘方案。</p>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-500 mb-1">起點 (Start)</label>
+                            <select id="startStation" class="w-full px-3 py-2 text-xs border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                                <option value="wangsimni">往十里 왕십리역</option>
+                                <option value="olympic">奧林匹克公園 올림픽공원역</option>
+                                <option value="forest">首爾林 서울숲역</option>
+                                <option value="seongsu">聖水 성수역</option>
+                                <option value="myeongdong">明洞 명동역</option>
+                                <option value="hongdae">弘大入口 홍대입구역</option>
+                                <option value="icnt1">仁川機場 T1 인천공항 T1</option>
+                                <option value="icnt2">仁川機場 T2 인천공항 T2</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-500 mb-1">終點 (End)</label>
+                            <select id="endStation" class="w-full px-3 py-2 text-xs border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                                <option value="olympic">奧林匹克公園 올림픽공원역</option>
+                                <option value="wangsimni" selected>往十里 왕십리역</option>
+                                <option value="forest">首爾林 서울숲역</option>
+                                <option value="seongsu">聖水 성수역</option>
+                                <option value="myeongdong">明洞 명동역</option>
+                                <option value="hongdae">弘大入口 홍대입구역</option>
+                                <option value="icnt1">仁川機場 T1 인천공항 T1</option>
+                                <option value="icnt2">仁川機場 T2 인천공항 T2</option>
+                            </select>
+                        </div>
+                        <div class="flex items-end">
+                            <button onclick="calculateRoute()" class="w-full bg-indigo-600 text-white text-xs font-bold py-2.5 rounded-lg hover:bg-indigo-700 transition">
+                                查詢乘車線路
+                            </button>
+                        </div>
+                    </div>
+                    <div id="routeResult" class="mt-4 p-4 bg-white rounded-xl border border-indigo-100 hidden text-xs"></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const targetDate = new Date("June 19, 2026 11:40:00").getTime();
+
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const distance = targetDate - now;
+
+            if (distance < 0) {
+                document.getElementById("days").innerText = "00";
+                document.getElementById("hours").innerText = "00";
+                document.getElementById("mins").innerText = "00";
+                document.getElementById("secs").innerText = "00";
+                return;
+            }
+
+            const d = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const h = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const m = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const s = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("days").innerText = String(d).padStart(2, '0');
+            document.getElementById("hours").innerText = String(h).padStart(2, '0');
+            document.getElementById("mins").innerText = String(m).padStart(2, '0');
+            document.getElementById("secs").innerText = String(s).padStart(2, '0');
+        }
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+
+        const krwInput = document.getElementById("krwInput");
+        const hkdOutput = document.getElementById("hkdOutput");
+        const jpyOutput = document.getElementById("jpyOutput");
+
+        function updateCurrencyConversion() {
+            const krwVal = parseFloat(krwInput.value) || 0;
+            hkdOutput.innerText = (krwVal / 175).toFixed(1);
+            jpyOutput.innerText = Math.round(krwVal / 9).toLocaleString('en-US');
+        }
+
+        krwInput.addEventListener("input", updateCurrencyConversion);
+        updateCurrencyConversion();
+
+        function openModal() {
+            document.getElementById("toolkitModal").classList.remove("hidden");
+        }
+
+        function closeModal() {
+            document.getElementById("toolkitModal").classList.add("hidden");
+        }
+
+        function playTTS(text) {
+            if (!text) return;
+            const synth = window.speechSynthesis;
+            if (synth.speaking) {
+                synth.cancel();
+            }
+            const utterance = new SpeechSynthesisUtterance(text);
+            utterance.lang = 'ko-KR';
+            synth.speak(utterance);
+        }
+
+        function speakPhrase(phraseText) {
+            playTTS(phraseText);
+        }
+
+        function triggerTranslation() {
+            const inputVal = document.getElementById("transInput").value;
+            const outputArea = document.getElementById("transOutput");
+            if (!inputVal.trim()) return;
+            outputArea.value = "正在翻譯中...";
+            
+            const apiUrl = `https://api.mymemory.translated.net/get?q=${encodeURIComponent(inputVal)}&langpair=zh-TW|ko`;
+            fetch(apiUrl)
+                .then(res => res.json())
+                .then(data => {
+                    if (data && data.responseData && data.responseData.translatedText) {
+                        outputArea.value = data.responseData.translatedText;
+                    } else {
+                        outputArea.value = "翻譯失敗，請再試一次。";
+                    }
+                })
+                .catch(() => {
+                    outputArea.value = "網路連線異常，無法翻譯。";
+                });
+        }
+
+        const routeDb = {
+            "wangsimni_olympic": {
+                title: "🚇 往十里站 ➔ 奧林匹克公園站 (捷運直達)",
+                time: "約 20 分鐘",
+                steps: [
+                    "從往十里站 (Wangsimni / 왕십리역) 進入 5 號線月台。",
+                    "搭乘 5 號線（朝馬川 마천方向 / 注意勿搭錯往上一洞方向的分支）。",
+                    "在 奧林匹克公園站 (Olympic Park / 올림픽공원역) 下車，走 3 號出口步行約 10 分鐘即可抵達奧林匹克大廳。"
+                ]
+            },
+            "olympic_wangsimni": {
+                title: "🚇 奧林匹克公園站 ➔ 往十里站 (捷運直達)",
+                time: "約 20 分鐘",
+                steps: [
+                    "從奧林匹克公園站 (올림픽공원역) 進入 5 號線月台。",
+                    "搭乘 5 號線（朝傍花 방화 或 往十里 왕십리 方向）。",
+                    "在 往十里站 (Wangsimni / 왕십리역) 下車，由 2 號或 3 號出口步行前往飯店。"
+                ]
+            },
+            "wangsimni_forest": {
+                title: "🚇 往十里站 ➔ 首爾林站 (捷運直達)",
+                time: "約 3 分鐘",
+                steps: [
+                    "從往十里站 (왕십리역) 搭乘 水仁·盆堂線 (수인분당線)。",
+                    "搭乘 1 站，在 首爾林站 (Seoul Forest / 서울숲역) 下車。",
+                    "從 4 號出口穿過 D Tower 直行進入首爾林公園。"
+                ]
+            },
+            "forest_wangsimni": {
+                title: "🚇 首爾林站 ➔ 往十里站 (捷運直達)",
+                time: "約 3 分鐘",
+                steps: [
+                    "從首爾林站 (서울숲역) 搭乘 水仁·盆堂線 (往往十里方向)。",
+                    "搭乘 1 站，在 往十里站 (Wangsimni /왕십리역) 下車。"
+                ]
+            },
+            "wangsimni_seongsu": {
+                title: "🚇 往十里站 ➔ 聖水站 (捷運直達)",
+                time: "約 5 分鐘",
+                steps: [
+                    "從往十里站 (왕십리역) 進入 2 號線月台。",
+                    "搭乘 2 號線（往聖水 / 建大入口方向）。",
+                    "在 聖水站 (Seongsu / 성수역) 下車。"
+                ]
+            },
+            "seongsu_wangsimni": {
+                title: "🚇 聖水站 ➔ 往十里站 (捷運直達)",
+                time: "約 5 分鐘",
+                steps: [
+                    "從聖水站 (성수역) 進入 2 號線月台。",
+                    "搭乘 2 號線（往往十里 / 乙支路方向）。",
+                    "在 往十里站 (Wangsimni / 왕십리역) 下車。"
+                ]
+            },
+            "wangsimni_myeongdong": {
+                title: "🚇 往十里站 ➔ 明洞站 (捷運轉乘)",
+                time: "約 15 分鐘",
+                steps: [
+                    "從往十里站 (왕십리역) 搭乘地鐵 2 號線，至 東大門歷史文化公園站 (DDP역)。",
+                    "轉乘地鐵 4 號線 (朝會賢 / 首爾站方向)。",
+                    "在 明洞站 (Myeong-dong / 명동역) 下車。"
+                ]
+            },
+            "icnt1_olympic": {
+                title: "🚌 仁川機場 T1 ➔ 奧林匹克公園 (巴士直達)",
+                time: "約 75 分鐘",
+                steps: [
+                    "在仁川機場第一航廈 (T1) 入境大廳，前往大巴搭乘月台。",
+                    "搭乘 機場巴士 6006 號 直達「奧林匹克公園站」。",
+                    "下車後步行至奧林匹克大廳置物櫃寄存行李。"
+                ]
+            },
+            "icnt2_olympic": {
+                title: "🚌 仁川機場 T2 ➔ 奧林匹克公園 (巴士直達)",
+                time: "約 80 分鐘",
+                steps: [
+                    "在仁川機場第二航廈 (T2) 入境大廳，前往大巴乘車處。",
+                    "搭乘 機場巴士 6300 號 直達「奧林匹克公園站」。",
+                    "下車後步行至奧林匹克大廳置物櫃與旅伴會合。"
+                ]
+            }
+        };
+
+        function calculateRoute() {
+            const start = document.getElementById("startStation").value;
+            const end = document.getElementById("endStation").value;
+            const routeResult = document.getElementById("routeResult");
+            
+            const lookupKey = `${start}_${end}`;
+            const lookupKeyReverse = `${end}_${start}`;
+            
+            let route = routeDb[lookupKey] || routeDb[lookupKeyReverse];
+            
+            routeResult.classList.remove("hidden");
+            
+            if (route) {
+                let stepsHtml = "";
+                route.steps.forEach((step, idx) => {
+                    stepsHtml += `<li class="mb-1.5 flex gap-2"><span class="bg-indigo-100 text-indigo-700 px-1.5 py-0.5 rounded font-bold h-5 flex items-center justify-center">${idx + 1}</span> <span>${step}</span></li>`;
+                });
+                
+                routeResult.innerHTML = `
+                    <h5 class="font-bold text-slate-900 mb-1 text-sm">${route.title}</h5>
+                    <p class="text-xs text-pink-600 font-bold mb-3">⏱️ 預估耗時：${route.time}</p>
+                    <ul class="text-slate-600 pl-1">
+                        ${stepsHtml}
+                    </ul>
+                `;
+            } else {
+                routeResult.innerHTML = `
+                    <p class="text-slate-500 italic">系統中查無此直達或快捷路線，建議出發前直接使用手機 <strong>Naver Map (네이버 지도)</strong> 查詢地鐵 2/5 號線轉乘方式最精確喔！</p>
+                `;
+            }
+        }
+
+        const day1Itinerary = [
+            { time: "07:00", text: "CX410 香港組出發 (HKG)", desc: "前往香港國際機場辦理登機手續，迎接首爾演唱會之行！" },
+            { time: "07:30", text: "香港機場出關", desc: "通關辦理完畢，在機場內稍作休息並享用機場早餐。" },
+            { time: "08:00", text: "CX410 登機中", desc: "班機 CX410（09:25 起飛），請留意一號航廈登機口通知。" },
+            { time: "08:30", text: "RS706 東京組出發 (NRT)", desc: "前往東京成田機場第二航廈（NRT T2）辦理登機與行李託運手續。" },
+            { time: "09:00", text: "CX410 起航飛往首爾", desc: "香港 09:25 起飛 ➔ 14:05 降落首爾仁川國際機場第一航廈（ICN T1）。" },
+            { time: "10:00", text: "RS706 登機中", desc: "成田 T2 登機準備，RS706（11:40 起飛），首爾演唱會集結倒數！" },
+            { time: "11:40", text: "RS706 起航飛往首爾", desc: "成田 11:40 起飛 ➔ 14:20 降落首爾仁川國際機場第二航廈（ICN T2）。" },
+            { time: "14:05", text: "香港組順利降落 ICN T1 🛬", desc: "CX410 降落。下機後迅速過關、提取行李並在大廳購買或儲值 T-Money 交通卡。" },
+            { time: "14:20", text: "東京組順利降落 ICN T2 🛬", desc: "RS706 降落。兩組人馬由於航廈不同，不花時間在機場折返會合，直接採取分流搭大巴策略！" },
+            { time: "15:00", text: "各自搭乘機場大巴直奔會場 🚌", desc: "【香港組 (T1)】乘搭機場大巴 <strong class='text-pink-600 font-bold'>6006 號</strong>；【東京組 (T2)】乘搭機場大巴 <strong class='text-indigo-600 font-bold'>6300 號</strong>。兩班大巴皆直達奧林匹克公園 (올림픽공원) 站。" },
+            { time: "16:30", text: "抵達奧林匹克大廳會合 🏟️", desc: "於奧林匹克大廳（Olympic Hall / 올림픽홀）付費寄存處（Cloakroom / 물품보관소）順利合體！" },
+            { time: "17:00", text: "寄存行李託運手續", desc: "Cloakroom 於演前 3 小時開始營運。將雙方的行李箱與大包包一同寄存妥當，解放雙手！" },
+            { time: "17:30", text: "快速晚餐與咖啡補給 ☕", desc: "在奧林匹克公園站（Olympic Park Station / 올림픽공원역）周邊店家，快速享用溫熱的韓式小吃，補充看演唱會的體力！" },
+            { time: "18:30", text: "安檢排隊進場", desc: "演唱會於 20:00 開演，官方規定提前 1.5 小時（18:30）開始進場安檢與驗票。" },
+            { time: "20:00", text: "🎤 MAMAMOO WORLD TOUR [4WARD] - Day 1 盛大開演！", desc: "盡情狂歡、狂搖蘿蔔棒（무봉）！享受首爾場極限炸裂的應援！" },
+            { time: "22:30", text: "演出結束 / 取回寄存行李", desc: "演出完畢，務必在 1 小時之內（23:30 前）到 Cloakroom 取回行李。" },
+            { time: "23:00", text: "地鐵 5 號線直達往十里 🚇", desc: "從奧林匹克公園站乘搭地鐵 5 號線（往傍花/往十里方向，왕십리방향），直達往十里站。" },
+            { time: "23:30", text: "飯店 Check-In 🏨", desc: "抵達 Hotel Stay Yeoyu（머무름여유）辦理入住。便利商店買個香蕉牛奶及熱呼呼的宵夜補水！" },
+            { time: "00:00", text: "徹底躺平 / 補眠", desc: "徹底洗去一天的疲累，迅速就寢。" }
+        ];
+
+        const day2Itinerary = [
+            { time: "10:00", text: "晚起自然醒 🛌", desc: "今天無須早起。跳過不必要的早餐時間，徹底睡飽，為晚上的第二場演唱會做最萬全的體力準備。" },
+            { time: "11:00", text: "往十里 ➔ 明洞潮流購物 🛍️", desc: "搭乘地鐵 2 號線直達東大門歷史文化公園站，轉乘 4 號線前往明洞（Myeong-dong / 명동역）。" },
+            { time: "12:00", text: "早午餐：明洞餃子或韓式烤肉 🍲", desc: "享用明洞餃子（명동교자）或滋補的蔘雞湯。在明洞街區隨意逛逛藥妝店與紀念品店。" },
+            { time: "13:30", text: "返回往十里放戰利品", desc: "搭乘地鐵回往十里站，將中午採買的伴手禮與沉重的提袋放回飯店房間。" },
+            { time: "14:30", text: "往十里 ➔ 奧林匹克公園站 🚇", desc: "搭乘地鐵 5 號線直達奧林匹克公園站（올림픽공원역）。" },
+            { time: "15:00", text: "會場周邊巡禮與行李寄存", desc: "Day 2 付費置物櫃下午 14:00 已開放。前往寄存隨身重物，在場外與其他木木（MOOMOO）交流應援物並合照留念。" },
+            { time: "15:30", text: "Day 2 排隊進場", desc: "進入奧林匹克大廳。今晚要帶來比昨天更狂熱的尖叫應援！" },
+            { time: "17:00", text: "🎤 MAMAMOO WORLD TOUR [4WARD] - Day 2 震撼開演！", desc: "第二場通常會有更多驚喜彩蛋與感動互動！哭爆、喊爆、狂揮蘿蔔棒！" },
+            { time: "19:30", text: "演唱會圓滿落幕 / 慶功宴晚餐 🥩", desc: "前往鄰近的【芳荑洞美食街 / 방이동 먹자골목】享用正宗韓式烤五花肉、大口吃肉慶功，分享這兩天的極致喜悅！" },
+            { time: "21:30", text: "返回往十里站", desc: "搭乘地鐵 5 號線安全返回住宿大本營。路上可以在便利商店做點心補貨。" },
+            { time: "22:30", text: "飯店休息 / 暢聊通宵", desc: "洗個舒服的熱水澡，敷上面膜，邊聊這兩天 Live 的神級現場邊整理行李，放鬆入睡。" }
+        ];
+
+        const day3Itinerary = [
+            { time: "08:00", text: "戰術出動 ➔ 往十里站出發", desc: "今天是寶可夢活動終日，必須早起搶票！水仁·盆堂線僅坐 1 站，直達首爾林站（Seoul Forest / 서울숲역）（3分鐘）。" },
+            { time: "08:30", text: "首爾林秘密森林排隊", desc: "首爾林站 4 號出口穿過 D Tower 直行，提前至寶可夢秘密森林（Secret Forest / 비밀의 숲）入口等候。" },
+            { time: "09:00", text: "🌳 搶取首爾林整理券", desc: "09:00 開放 Email 登記取得入場號碼。可由一人代表登記多人。確認收到 Email 系統確認信再行離開！" },
+            { time: "09:30", text: "的士戰術轉移至聖水洞", desc: "避免公車擁擠延誤搶券時間，直接在路邊呼叫 Kakao T 前往聖水洞（Seongsu-dong / 성수동）。" },
+            { time: "10:00", text: "👾 搶取百變怪遊樂場整理券", desc: "抵達百變怪快閃店。注意：此處所有人必須分開各自登記 Email 取號！" },
+            { time: "10:15", text: "nagano 韓國聖水店卡位", desc: "登記完百變怪，步行至 nagano (吉伊卡哇) 聖水店門口排隊卡位，準備開店首批收割！" },
+            { time: "11:30", text: "聖水洞特色早午餐 🥪", desc: "等待開園期間，在聖水洞享用網紅釜飯或特色早午餐，隨便喝杯香濃咖啡。" },
+            { time: "12:30", text: "【百變怪遊樂場】大扭蛋 💜", desc: "收到叫號（即便過號也可入），現場排隊扭蛋. ※ 必須使用 Mastercard 實體卡刷卡扭蛋！" },
+            { time: "13:30", text: "參觀【nagano 韓國聖水店】", desc: "購買極其可愛的吉伊卡哇（Chiikawa / 치이카와）與小八等限定周邊！" },
+            { time: "15:00", text: "聖水洞 Olive Young 旗艦店大採購", desc: "在聖水洞最大門市大肆購買美妝、保養品、小餅乾，結帳滿額享即時退稅！" },
+            { time: "16:00", text: "回歸【首爾林寶可夢秘密森林】🌳", desc: "持整理券入場，與巨型皮卡丘、卡比獸拍照，領取免費紙帽子，並用手機 NFC 感應購買限定森林百變怪周邊。" },
+            { time: "17:30", text: "晚餐：聖水洞馬鈴薯排骨湯 🍲", desc: "大口啃食濃郁軟嫩的馬鈴薯燉豬骨湯（감자탕），搭配靈魂海苔炒飯，暖心又飽足。" },
+            { time: "19:30", text: "返回往十里站放戰利品", desc: "搭乘地鐵 2 號線返回往十里站，將今日大滿貫的戰利品全部放回房間。" },
+            { time: "20:00", text: "往十里 E-Mart 超市終極採購 🛒", desc: "把握最後一晚，在往十里站的超大 E-Mart 超市採購辛拉麵、草莓乾、海苔等各式零食伴手禮。" },
+            { time: "22:00", text: "行李箱大作戰 / 終極打包 🧳", desc: "洗個熱水澡，把兩天的演唱會周邊、大滿貫寶可夢娃娃、藥妝與超市零食通通塞進行李箱！" }
+        ];
+
+        const day4Itinerary = [
+            { time: "08:30", text: "晚起退房整理 🛌", desc: "今天無須清晨早起，也無需特意享用多餘早餐。直接睡到 08:30，把所有的戰利品做最後的行李箱裝箱。" },
+            { time: "09:30", text: "飯店 Check-Out 辦理 🏨", desc: "辦理 Hotel Stay Yeoyu 退房手續，拖著戰利品行李箱出發。" },
+            { time: "10:00", text: "往十里站 ➔ 弘大入口站 🚇", desc: "搭乘地鐵 2 號線直達弘大入口站（Hongik University / 홍대입구역）。" },
+            { time: "10:30", text: "弘大入口站轉乘機場鐵路 (AREX)", desc: "轉乘機場鐵路一般列車，向仁川機場出發。" },
+            { time: "11:45", text: "抵達仁川國際機場 ✈️", desc: "【香港組】於第一航廈 (ICN T1) 下車；【東京組】於第二航廈 (ICN T2) 下車。雙方在此做擁抱告別，並前往各自航廈櫃檯託運行李。" },
+            { time: "12:00", text: "辦理登機 & 機場午餐 🍲", desc: "辦理託運與免稅品退稅申報手續。通關進入禁區後，在機場 Food Hall 享用最後一餐美味的冷麵或韓式豆腐鍋。" },
+            { time: "13:40", text: "香港組起飛！CX439 ➔ 香港 (16:30)", desc: "國泰航空 CX439 於 T1 起飛，預計 16:30 抵達香港（HKG）。" },
+            { time: "16:45", text: "東京組起飛！RS703 ➔ 成田 (19:10)", desc: "首爾航空 RS703 於 T2 起飛，預計 19:10 抵達成田機場（NRT）。" },
+            { time: "19:10", text: "安全抵達家園 🏡", desc: "兩路人馬皆順利回到溫馨的家。MAMAMOO 的極致音樂饗宴與寶可夢秘密森林的快樂回憶將永存心中！" }
+        ];
+
+        function generateTimeline(data, containerId) {
+            const container = document.getElementById(containerId);
+            container.innerHTML = "";
+            data.forEach((item, index) => {
+                const isHighlight = item.text.includes("MAMAMOO") || item.text.includes("寶可夢") || item.text.includes("百變怪") || item.text.includes("降落") || item.text.includes("起飛");
+                const cardHtml = `
+                    <div class="print-card flex items-start gap-4 p-4 bg-white rounded-xl border ${isHighlight ? 'border-pink-500/40 bg-pink-50/20' : 'border-slate-200'} shadow-sm hover:shadow-md transition">
+                        <span class="text-sm font-black bg-slate-900 text-white px-2.5 py-1 rounded-lg shrink-0 min-w-[65px] text-center">${item.time}</span>
+                        <div>
+                            <h4 class="font-extrabold ${isHighlight ? 'text-pink-600' : 'text-slate-800'} text-base">${item.text}</h4>
+                            <p class="text-xs text-slate-500 mt-1 leading-relaxed">${item.desc}</p>
+                        </div>
+                    </div>
+                `;
+                container.innerHTML += cardHtml;
+            });
+        }
+
+        generateTimeline(day1Itinerary, "timeline-day1");
+        generateTimeline(day2Itinerary, "timeline-day2");
+        generateTimeline(day3Itinerary, "timeline-day3");
+        generateTimeline(day4Itinerary, "timeline-day4");
+
+        function switchDay(day) {
+            document.querySelectorAll(".tab-content").forEach(el => {
+                el.classList.add("hidden");
+                el.classList.remove("block");
+            });
+            document.getElementById("day" + day).classList.remove("hidden");
+            document.getElementById("day" + day).classList.add("block");
+
+            document.querySelectorAll(".tab-btn").forEach(btn => {
+                btn.className = "tab-btn px-4 py-2 text-sm font-bold rounded-xl transition duration-200 bg-slate-100 text-slate-600 hover:bg-slate-200";
+            });
+            
+            const activeColors = {
+                1: "bg-pink-500 text-white shadow-md",
+                2: "bg-pink-500 text-white shadow-md",
+                3: "bg-emerald-500 text-white shadow-md",
+                4: "bg-slate-700 text-white shadow-md"
+            };
+            document.getElementById("btn-day" + day).className = "tab-btn px-4 py-2 text-sm font-bold rounded-xl transition duration-200 " + activeColors[day];
+        }
+    </script>
+</body>
+</html>
