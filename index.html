@@ -503,8 +503,7 @@
 
             const utterance = new SpeechSynthesisUtterance(text);
             utterance.lang = 'ko-KR';
-            utterance.rate = 0.70;
-            utterance.pitch = 1.0;
+            utterance.rate = 0.85;
 
             const voices = synth.getVoices();
             const koVoice = voices.find(v => v.lang.startsWith('ko'));
