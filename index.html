@@ -107,7 +107,7 @@
                             </div>
                             <div>
                                 <span class="font-bold">首爾航空 RS703</span>
-                                <p class="text-slate-500">ICN T2 16:45 ➔ 19:10 NRT</p>
+                                <p class="text-slate-500">ICN T2 18:40 ➔ 21:05 NRT</p>
                             </div>
                         </div>
                     </div>
@@ -503,7 +503,8 @@
 
             const utterance = new SpeechSynthesisUtterance(text);
             utterance.lang = 'ko-KR';
-            utterance.rate = 0.85;
+            utterance.rate = 0.70;
+            utterance.pitch = 1.0;
 
             const voices = synth.getVoices();
             const koVoice = voices.find(v => v.lang.startsWith('ko'));
@@ -724,8 +725,8 @@
             { time: "11:45", text: "抵達仁川國際機場 ✈️", desc: "【香港組】於第一航廈 (ICN T1) 下車；【東京組】於第二航廈 (ICN T2) 下車。雙方在此做擁抱告別，並前往各自航廈櫃檯託運行李。" },
             { time: "12:00", text: "辦理登機 & 機場午餐 🍲", desc: "辦理託運與免稅品退稅申報手續。通關進入禁區後，在機場 Food Hall 享用最後一餐美味的冷麵或韓式豆腐鍋。" },
             { time: "13:40", text: "香港組起飛！CX439 ➔ 香港 (16:30)", desc: "國泰航空 CX439 於 T1 起飛，預計 16:30 抵達香港（HKG）。" },
-            { time: "16:45", text: "東京組起飛！RS703 ➔ 成田 (19:10)", desc: "首爾航空 RS703 於 T2 起飛，預計 19:10 抵達成田機場（NRT）。" },
-            { time: "19:10", text: "安全抵達家園 🏡", desc: "兩路人馬皆順利回到溫馨的家。MAMAMOO 的極致音樂饗宴與寶可夢秘密森林的快樂回憶將永存心中！" }
+            { time: "18:40", text: "東京組起飛！RS703 ➔ 成田 (21:05)", desc: "首爾航空 RS703 於 T2 起飛，預計 21:05 抵達成田機場（NRT）。" },
+            { time: "21:05", text: "安全抵達家園 🏡", desc: "兩路人馬皆順利回到溫馨的家。MAMAMOO 的極致音樂饗宴與寶可夢秘密森林的快樂回憶將永存心中！" }
         ];
 
         function generateTimeline(data, containerId) {
